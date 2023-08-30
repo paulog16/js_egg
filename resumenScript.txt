@@ -1,0 +1,107 @@
+---------------JAVASCRIPT-------------
+
+javascript es un lenguaje interpretado.
+
+Se utiliza principalmente del lado del cliente, 
+es implementado como parte de un navegador permintiendo mejoras
+en la interfaz del usuario.
+
+-------EXISTEN 3 FORMAS DE AÑADIRLO AL HTML----------
+1- añadiendo todo el script en el head.
+2-Añandiendo todo el script en el body.
+3- y mas recomendada, enlazar script externo.
+
+---------SALIDA Y ENTRADA DE DATOS----------
+Una consola web es una herramienta que se utiliza principalmente para registrar la informacion
+asociada a una pagina web como: solicitudes,errores de seguridad, advertencias, css etc
+
+en javascript, console sirve para acceder a la consola de depuracion.
+
+---------METODOS DEL CONSOLE------------
+
+console.log:
+
+se utiliza principalmente para mostrar un mensaje en la consola.
+ejemplos: 
+console.log("hola mundo")
+console.log(123)
+console.log([1,2,3])
+
+console.error(),console.warn()
+
+se utiliza para registrar mensajes de error en la consola
+ejemplos:
+console.error("error")
+console.warn("error")
+
+console.clear()
+
+se usa para limpiar la consola.
+ejemplos:
+console.clear().
+
+console.time(),console.timeEnd()
+
+se utiliza para saber la cantidad de tiempo empleado por un bloque o funcion
+ejemplos:
+console.time("abc")
+console.timeEnd("abc")
+
+console.table()
+
+esto crea una tabla en la consola, esto debe ser dado como una matriz u objeto
+ejemplos:
+console.table({'a':1,'b':2})
+
+console.count()
+
+esto se usa para contar en num que la funcion alcanze con el conteo
+ejemplo:
+for(let i=0;i<5;i++){
+    console.count(i);
+}
+-----------------------------------------------------
+
+------Prompt-------------
+el metodo window.prompt() muestra un mensaje con un dialogo opcional
+window.prompt('ingresa tu nombre')
+--------------------------
+
+------Alert------------
+el metodo window.alert() mustra un mensaje con alerta
+window.alert('hola')
+------------------------
+
+---------VARIABLES EN JAVASCRIPT---------------------
+
+EN JAVASCRIPT no hace falta darle un tipo de dato a la variable.
+Utilizaremos la palabra var cuando queramos declarar una variable.
+var variable;
+var precio1=5;
+var precio2=6;
+var precio3= precio1+precio2;
+
+USAR BUENAS PRACTICAS PARA DECLARAR VARIABLES
+----------------------------------------------------------
+
+---------LET---------
+al declarar una variable con LET solo se puede usar en el bloque en la que este declarada.
+ejemplo:
+function letPrueba() {
+ let x = 31;
+ if (true) {
+  let x = 71; // variable diferente
+   console.log(x); // Imprime el valor 71
+}
+    console.log(x); // Imprime el valor 31
+}
+
+------------------------
+
+------CONST----------
+esto nunca cambiara el valor de la constante
+const PI = 3.141592653589793;
+PI = 3.14; // Esto dará un error
+PI = PI + 10; // Esto también dará un error
+-----------------------
+
