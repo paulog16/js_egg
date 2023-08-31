@@ -105,3 +105,54 @@ PI = 3.14; // Esto dará un error
 PI = PI + 10; // Esto también dará un error
 -----------------------
 
+------template strings----------
+concatenar con ${valor}
+--------------------------------
+
+----typeof------------
+muestra el tipo de dato
+console.log(typeof 'var')
+---------------------
+
+
+---------label---------------
+identifiacar un bloque
+ejemplo: 
+exterior: for (let i = 0; i < 10; i++) {
+for (let j = 0; j < 10; j++) {
+if(i == 4 && j == 4){
+console.log("Vamos a cortar ambos for");
+break exterior;
+}
+console.log(i+j+10*i);
+}}
+------------------------------
+
+
+
+-----------FUNCIONES-------------
+primero se indica la palabra reservada 'function', despues el nombre de la funcion().
+function holaMundo(){
+console.log(‘Hola Mundo’);
+}
+DONDE LLAMAMOS A LA FUNCION?
+siempre hay que llamarla en un bloque script
+ejemplo:
+<html>
+<head>
+<title>MI PÁGINA</title>
+<script>
+function miFuncion(){
+//hago algo...
+console.log("Esto va bien");
+}
+</script>
+</head>
+<body>
+<script>
+miFuncion()
+</script>
+</body>
+</html>
+---------------------------------
+

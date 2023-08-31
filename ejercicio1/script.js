@@ -1,2 +1,14 @@
-var dia=prompt("Como esta el dia hoy, (soleado,nulado,lloviendo)")
-alert('el dia esta: '+dia)
+var opc = document.getElementById('op')
+var opci = 'Como esta el dia? soleado,nublado,lluvioso'
+opc.innerHTML = opci;
+
+function clima() {
+    var op = document.getElementById('input').value;
+    document.getElementById('cont').textContent = 'opcion: '+op;
+}
+function resetear(){
+    document.getElementById('input').value='';
+    document.getElementById('cont').value='';
+  
+
+}
