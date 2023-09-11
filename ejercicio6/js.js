@@ -5,14 +5,14 @@ btn.addEventListener('click', function () {
     var num = document.getElementById('num').value;
     num = parseInt(num);
     var ver = document.getElementById('ver').value;
-    if (num % 2 == 0) {
-        document.getElementById('ver').textContent = 'es par'
-    } else if (num % 2 != 0) {
-        document.getElementById('ver').textContent = 'No es par'
+    if (num == 0) {
+        document.getElementById('ver').textContent = 'no es par, ni impar'
+    } else if (num % 2 == 0) {
+        document.getElementById('ver').textContent = ' es par'
 
-    }else if (num==0){
-        document.getElementById('ver').textContent = 'No es par ni impar'
+    } else {
+        document.getElementById('ver').textContent = 'es impar'
     }
 
 })
-radio=parseInt(radio)
+radio = parseInt(radio)
